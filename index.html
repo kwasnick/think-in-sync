@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Think In Sync</title>
+    <style>
+      /* reset & body */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f2f2f2;
+        min-height: 100vh;
+        font-family: sans-serif;
+        padding: 1rem;
+      }
+
+      /* card container */
+      .card {
+        width: 100%;
+        max-width: 400px;
+        background: white;
+        border: 2px solid #000;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* header gradient */
+      .card-header {
+        padding: 1rem;
+        background: linear-gradient(90deg, #ffd772 0%, #ff5f7e 100%);
+        position: relative;
+      }
+      /* optional halftone dots overlay */
+      .card-header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#000 1px, transparent 1px) 0 0/8px 8px;
+        opacity: 0.2;
+        pointer-events: none;
+      }
+      .card-header h1 {
+        position: relative;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000;
+        z-index: 1;
+      }
+
+      /* body prompts */
+      .card-body {
+        padding: 1rem;
+        background: #fff;
+      }
+      .card-body ul {
+        list-style: none;
+      }
+      .card-body li {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        color: #333;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <h1 id="category">Category</h1>
+      </div>
+      <div class="card-body">
+        <ul id="prompts">
+          <!-- prompts go here -->
+        </ul>
+      </div>
+    </div>
+
+    <script type="module">
+      import { cards } from "./cards.js";
+
+      // pick a random card
+      const card = cards[Math.floor(Math.random() * cards.length)];
+
+      // render
+      document.getElementById("category").textContent = card.category;
+      const ul = document.getElementById("prompts");
+      card.prompts.forEach((p) => {
+        const li = document.createElement("li");
+        li.textContent = p;
+        ul.append(li);
+      });
+    </script>
+  </body>
+</html>
