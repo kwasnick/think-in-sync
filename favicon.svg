@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Game gradient -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd772" />
+      <stop offset="100%" stop-color="#ff5f7e" />
+    </linearGradient>
+    <!-- Arrowhead marker -->
+    <marker
+      id="arrow"
+      viewBox="0 0 10 10"
+      refX="6"
+      refY="5"
+      markerWidth="6"
+      markerHeight="6"
+      orient="auto-start-reverse"
+    >
+      <path d="M0,0 L10,5 L0,10 Z" fill="url(#grad)" />
+    </marker>
+  </defs>
+
+  <!-- Outer circle background -->
+  <circle cx="32" cy="32" r="30" fill="url(#grad)" />
+
+  <!-- Speech bubble -->
+  <path
+    d="M18 20
+       h28
+       a4 4 0 0 1 4 4
+       v16
+       a4 4 0 0 1 -4 4
+       H30
+       l-8 8
+       v-8
+       H18
+       a4 4 0 0 1 -4 -4
+       V24
+       a4 4 0 0 1 4 -4
+       z"
+    fill="#fff"
+  />
+
+  <!-- Sync arrows inside bubble -->
+  <path
+    d="M26 30
+       a6 6 0 0 1 12 0"
+    fill="none"
+    stroke="#ff5f7e"
+    stroke-width="2"
+    stroke-linecap="round"
+    marker-end="url(#arrow)"
+  />
+  <path
+    d="M38 34
+       a6 6 0 0 1 -12 0"
+    fill="none"
+    stroke="#ffd772"
+    stroke-width="2"
+    stroke-linecap="round"
+    marker-end="url(#arrow)"
+  />
+</svg>
