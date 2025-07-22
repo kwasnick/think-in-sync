@@ -19,12 +19,12 @@
         min-height: 100vh;
         font-family: sans-serif;
         padding: 1rem;
-        /* add perspective so 3D transforms on children look right */
         perspective: 1000px;
       }
 
       /* card container */
       .card {
+        position: relative;
         width: 100%;
         max-width: 400px;
         background: white;
@@ -32,14 +32,11 @@
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-        /* prepare for 3D flip */
         transform-style: preserve-3d;
         transform: rotateY(-90deg);
         opacity: 0;
         transition: transform 0.6s ease, opacity 0.6s ease;
       }
-      /* when we add .reveal, the card “flips” into place */
       .card.reveal {
         transform: rotateY(0);
         opacity: 1;
@@ -71,6 +68,29 @@
         z-index: 1;
       }
 
+      /* help button */
+      .help-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 2px solid #000;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      .help-button:hover {
+        background: rgba(255, 255, 255, 1);
+      }
+
       /* body prompts */
       .card-body {
         padding: 1rem;
@@ -85,17 +105,127 @@
         color: #333;
         line-height: 1.4;
       }
+
+      /* footer text */
+      .card-footer {
+        padding: 0.75rem;
+        text-align: center;
+        background: #fafafa;
+      }
+      .card-footer small {
+        font-size: 0.875rem;
+        color: #666;
+      }
+
+      /* modal overlay */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+      }
+      .modal-content {
+        background: #fff;
+        padding: 2rem; /* more generous padding */
+        border-radius: 8px;
+        max-width: 400px; /* cap at 400px wide */
+        width: 90%; /* or 90% of viewport */
+        position: relative;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        line-height: 1.5; /* easier to read text */
+        max-height: 80vh; /* stay within viewport */
+        overflow-y: auto; /* scroll if too tall */
+      }
+
+      /* Title spacing */
+      .modal-content h2 {
+        margin-top: 0;
+        margin-bottom: 1rem; /* space below heading */
+        font-size: 1.5rem;
+      }
+
+      /* Paragraph spacing */
+      .modal-content p {
+        margin-bottom: 1rem; /* consistent gap between paragraphs */
+        color: #333;
+      }
+
+      /* Close button tweaks */
+      .modal-close {
+        position: absolute;
+        top: 0.75rem; /* pull it in slightly */
+        right: 0.75rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        background: none; /* remove default background */
+        border: none;
+        padding: 0.25rem; /* bigger hit area */
+        cursor: pointer;
+        line-height: 1;
+      }
+      .modal-close:hover {
+        color: #000;
+      }
     </style>
   </head>
   <body>
     <div class="card">
       <div class="card-header">
         <h1 id="category">Category</h1>
+        <button id="help-btn" class="help-button" aria-label="How to play">
+          ?
+        </button>
       </div>
       <div class="card-body">
         <ul id="prompts">
           <!-- prompts go here -->
         </ul>
+      </div>
+      <div class="card-footer">
+        <small>Refresh for a new card</small>
+      </div>
+    </div>
+
+    <!-- How to Play Modal -->
+    <div id="help-modal" class="modal" aria-hidden="true">
+      <div
+        class="modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <span id="close-modal" class="modal-close" aria-label="Close"
+          >&times;</span
+        >
+        <h2 id="modal-title">How to Play</h2>
+        <p>
+          Choose one player as the 'reader', and two or more players as the
+          'guessers'.
+        </p>
+        <p>
+          The reader reads aloud the main category at the top of the card and
+          then the first prompt, and then slowly says, "3, 2, 1..."
+        </p>
+        <p>
+          On "1," all guessers look at each other and try to say, at the same
+          time, what they hope the other player will also say.
+        </p>
+        <p>If all guessers say the exact same thing, they win a point!</p>
+        <p>
+          Either way, the reader continues through all four sub-categories,
+          tallying up the guessers' points.
+        </p>
+        <p>
+          Then, someone else becomes the reader, and you repeat the process.
+        </p>
+        <p>Try to mix and match different groups of guessers!</p>
       </div>
     </div>
 
@@ -108,13 +238,13 @@
           const cardData = cards[Math.floor(Math.random() * cards.length)];
           document.getElementById("category").textContent = cardData.category;
           const ul = document.getElementById("prompts");
+          ul.innerHTML = ""; // clear old prompts
           cardData.prompts.forEach((p) => {
             const li = document.createElement("li");
             li.textContent = p;
             ul.appendChild(li);
           });
 
-          // trigger the flip animation on the next frame
           const card = document.querySelector(".card");
           requestAnimationFrame(() => {
             card.classList.add("reveal");
@@ -123,6 +253,26 @@
           console.error("Failed to load cards.json:", err);
         }
       }
+
+      // Modal functionality
+      const helpBtn = document.getElementById("help-btn");
+      const modal = document.getElementById("help-modal");
+      const closeBtn = document.getElementById("close-modal");
+
+      helpBtn.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modal.setAttribute("aria-hidden", "false");
+      });
+      closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+      });
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+          modal.setAttribute("aria-hidden", "true");
+        }
+      });
 
       loadCards();
     </script>
