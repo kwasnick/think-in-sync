@@ -1,0 +1,1289 @@
+[
+  {
+    "category": "Movie Animals",
+    "prompts": [
+      "A movie pig",
+      "A movie cat",
+      "A movie dog",
+      "A movie horse"
+    ]
+  },
+  {
+    "category": "Sports",
+    "prompts": [
+      "A sport with a half-time",
+      "A sport where the ball is hit over a net",
+      "A college football bowl game",
+      "A sport where the ball goes high in the air"
+    ]
+  },
+  {
+    "category": "Cooking",
+    "prompts": [
+      "A famous female chef",
+      "A famous male chef",
+      "A cooking show",
+      "A cooking magazine"
+    ]
+  },
+  {
+    "category": "At The Beach",
+    "prompts": [
+      "Something kids do at the beach",
+      "Something you lie on at the beach",
+      "Something worn on the beach besides a bathing suit",
+      "An animal at the beach"
+    ]
+  },
+  {
+    "category": "Movie Theaters",
+    "prompts": [
+      "A movie rating",
+      "A movie theater candy",
+      "Something people do that is annoying",
+      "A movie drink"
+    ]
+  },
+  {
+    "category": "Animals",
+    "prompts": [
+      "A water mammal",
+      "A marsupial",
+      "A bird that can't fly",
+      "A mythical animal"
+    ]
+  },
+  {
+    "category": "Baseball",
+    "prompts": [
+      "Something an umpire says",
+      "A piece of equipment players use",
+      "A pro baseball team in California",
+      "Besides the pitcher, an important player"
+    ]
+  },
+  {
+    "category": "Countries",
+    "prompts": [
+      "A country in North America",
+      "A country in South America",
+      "A country that starts with the letter \"S\"",
+      "A country in Asia"
+    ]
+  },
+  {
+    "category": "Artists",
+    "prompts": [
+      "A famous photographer",
+      "A famous sculpter",
+      "A famous French painter",
+      "A famous American painter"
+    ]
+  },
+  {
+    "category": "Breakfast Foods",
+    "prompts": [
+      "A brand of breakfast cereal",
+      "A dish made with eggs",
+      "A popular breakfast beverage",
+      "A spread you put on toast"
+    ]
+  },
+  {
+    "category": "Superheroes",
+    "prompts": [
+      "A superhero who can fly",
+      "A supervillain",
+      "A superhero team",
+      "A female superhero"
+    ]
+  },
+  {
+    "category": "Fruits",
+    "prompts": [
+      "A fruit that is red",
+      "A citrus fruit",
+      "A fruit you peel before eating",
+      "A fruit commonly used in pies"
+    ]
+  },
+  {
+    "category": "Famous Landmarks",
+    "prompts": [
+      "A famous tower",
+      "A well-known bridge",
+      "An ancient wonder tourists visit",
+      "A famous statue"
+    ]
+  },
+  {
+    "category": "Desserts",
+    "prompts": [
+      "A dessert made with chocolate",
+      "A fruit-based dessert",
+      "A frozen dessert",
+      "A baked dessert"
+    ]
+  },
+  {
+    "category": "Pizza",
+    "prompts": [
+      "A popular pizza topping",
+      "A style of pizza crust",
+      "A pizza chain restaurant",
+      "A cheese commonly used on pizza"
+    ]
+  },
+  {
+    "category": "Holidays",
+    "prompts": [
+      "A holiday where people exchange gifts",
+      "A holiday associated with costumes",
+      "A holiday celebrated with parades",
+      "A holiday associated with feasting"
+    ]
+  },
+  {
+    "category": "Winter Activities",
+    "prompts": [
+      "An activity you do on a frozen lake",
+      "A typical drink to enjoy by the fire after a day in the snow",
+      "A type of gear essential for skiing",
+      "A winter activity that involves sliding down a hill"
+    ]
+  },
+  {
+    "category": "Board Games",
+    "prompts": [
+      "A classic board game involving dice",
+      "A board game that uses cards as a component",
+      "A game you frequently play in teams",
+      "A game known for having a long playtime"
+    ]
+  },
+  {
+    "category": "Transportation",
+    "prompts": [
+      "A mode of transportation that uses two wheels",
+      "A vehicle commonly used for public transport in cities",
+      "A type of transportation that can travel through the air",
+      "A type of boat used for leisure activities"
+    ]
+  },
+  {
+    "category": "Musical Instruments",
+    "prompts": [
+      "A percussion instrument you strike with sticks",
+      "An instrument often used in jazz music",
+      "A string instrument you can play with a bow",
+      "An instrument with keys that is not a piano"
+    ]
+  },
+  {
+    "category": "Camping",
+    "prompts": [
+      "An animal you might see while camping",
+      "A piece of gear essential for camping",
+      "A type of terrain where people camp",
+      "A common campfire snack"
+    ]
+  },
+  {
+    "category": "Beverages",
+    "prompts": [
+      "A beverage you drink in the morning",
+      "A fizzy soft drink",
+      "A type of alcoholic drink served in a cocktail glass",
+      "A popular non-dairy milk alternative"
+    ]
+  },
+  {
+    "category": "Fashion",
+    "prompts": [
+      "An accessory you might find in a lady's handbag",
+      "A style of hat commonly worn in summer",
+      "A fabric commonly used in luxury fashion",
+      "A pattern you might find on a necktie"
+    ]
+  },
+  {
+    "category": "Technology",
+    "prompts": [
+      "A gadget invented in the last decade",
+      "A well-known technology brand",
+      "An essential component of a computer",
+      "A popular social media platform"
+    ]
+  },
+  {
+    "category": "Gardening",
+    "prompts": [
+      "A flower often found in cottage gardens",
+      "A type of plant commonly grown indoors",
+      "A tool used for trimming plants",
+      "A type of vegetable commonly grown in a kitchen garden"
+    ]
+  },
+  {
+    "category": "Space Exploration",
+    "prompts": [
+      "A famous figure in space exploration",
+      "A planet in our solar system",
+      "A historical spacecraft",
+      "A well-known space mission"
+    ]
+  },
+  {
+    "category": "Historical Events",
+    "prompts": [
+      "An event during the 20th century",
+      "A famous maritime disaster",
+      "A battle from ancient history",
+      "A revolution in world history"
+    ]
+  },
+  {
+    "category": "Room Decor",
+    "prompts": [
+      "A type of furniture commonly found in a living room",
+      "An item used for lighting up a room",
+      "A wall decoration often seen in homes. ",
+      "A common color for bedroom walls"
+    ]
+  },
+  {
+    "category": "Video Games",
+    "prompts": [
+      "A video game character who wears a hat",
+      "A type of video game controller",
+      "A video game franchise featuring dragons",
+      "A video game that involves building"
+    ]
+  },
+  {
+    "category": "Hiking",
+    "prompts": [
+      "An essential item to bring on a hike",
+      "A type of footwear for hiking",
+      "A common animal you might see while hiking",
+      "A popular trail name"
+    ]
+  },
+  {
+    "category": "Pets",
+    "prompts": [
+      "A pet known for being chatty",
+      "A type of pet that requires a heat lamp",
+      "A popular small dog breed",
+      "A common pet that lives in a tank"
+    ]
+  },
+  {
+    "category": "Books and Literature",
+    "prompts": [
+      "A classic novel that was adapted into a movie",
+      "A famous author known for mystery novels",
+      "A book genre popular among young adults",
+      "A series of books that has sold millions of copies"
+    ]
+  },
+  {
+    "category": "Cultural Celebrations",
+    "prompts": [
+      "A country known for its colorful festivals",
+      "A festival known for extravagant parades",
+      "A cultural dance that involves traditional costumes",
+      "A food commonly associated with street festivals"
+    ]
+  },
+  {
+    "category": "Under The Sea",
+    "prompts": [
+      "An animal that lives in coral reefs",
+      "An item you might find on the ocean floor",
+      "A popular sea creature in mythology",
+      "A popular method of underwater exploration"
+    ]
+  },
+  {
+    "category": "Amusement Parks",
+    "prompts": [
+      "A ride that spins you around",
+      "A popular amusement park snack",
+      "A theme commonly found at amusement parks",
+      "A type of roller coaster"
+    ]
+  },
+  {
+    "category": "Festivals",
+    "prompts": [
+      "A food commonly eaten at Oktoberfest",
+      "A type of music played at Carnival",
+      "A common activity during Diwali",
+      "A popular attraction at the Rio Carnival"
+    ]
+  },
+  {
+    "category": "Camping Gear",
+    "prompts": [
+      "An item you use to start a fire",
+      "An essential piece of camping equipment",
+      "A type of footwear useful for camping",
+      "A typical food item brought on a camping trip"
+    ]
+  },
+  {
+    "category": "Inventions",
+    "prompts": [
+      "An invention that changed communication",
+      "An invention that changed transportation",
+      "An invention that people use every day",
+      "A household invention from 1800s"
+    ]
+  },
+  {
+    "category": "Urban Life",
+    "prompts": [
+      "A popular street food found in major cities",
+      "A city known for its skyscrapers",
+      "A mode of public transportation in urban areas",
+      "A famous urban park"
+    ]
+  },
+  {
+    "category": "Ocean Activities",
+    "prompts": [
+      "A water sport that requires a board",
+      "A tool used in scuba diving",
+      "A type of fish people commonly fish for in the ocean",
+      "Something you do oriented around ocean exploration or travel"
+    ]
+  },
+  {
+    "category": "Television Shows",
+    "prompts": [
+      "A TV show featuring a group of friends",
+      "A reality TV talent competition",
+      "A TV show set in the future",
+      "A TV show with a celebrity chef"
+    ]
+  },
+  {
+    "category": "Travel Destinations",
+    "prompts": [
+      "A city known for its vibrant nightlife",
+      "A travel destination famous for historical architecture",
+      "A country known for its cuisine",
+      "A place famous for its beaches"
+    ]
+  },
+  {
+    "category": "Weather Phenomena",
+    "prompts": [
+      "A weather phenomenon that causes severe winter conditions",
+      "A phenomenon that causes temperatures to rise significantly",
+      "A weather pattern experienced in tropical areas",
+      "A type of weather associated with thunderstorms"
+    ]
+  },
+  {
+    "category": "Restaurants",
+    "prompts": [
+      "A fast-food chain known for its burgers",
+      "A type of cuisine you might find in a food court",
+      "A feature you might find on an upscale restaurant menu",
+      "A type of dish frequently ordered as takeout"
+    ]
+  },
+  {
+    "category": "School Activities",
+    "prompts": [
+      "A school subject that involves a lot of writing",
+      "A common extracurricular activity",
+      "A common item found in a student's backpack",
+      "A type of book commonly found in a school library"
+    ]
+  },
+  {
+    "category": "Home Appliances",
+    "prompts": [
+      "A kitchen appliance that heats food quickly",
+      "A small home appliance used for making coffee",
+      "An appliance often found in the living room",
+      "An appliance you use to clean clothes"
+    ]
+  },
+  {
+    "category": "Mythical Creatures",
+    "prompts": [
+      "A mythical creature that breathes fire",
+      "A sea creature from mythology",
+      "A mythical creature that is part human and part animal",
+      "A winged mythical creature"
+    ]
+  },
+  {
+    "category": "Office Life",
+    "prompts": [
+      "An item commonly found on a desk",
+      "A frequent reason for calling IT support",
+      "A common office break room snack",
+      "An essential office supply"
+    ]
+  },
+  {
+    "category": "Common Fears",
+    "prompts": [
+      "A fear associated with high places",
+      "A fear people often have about animals",
+      "A common fear that many children have",
+      "A fear related to natural disasters"
+    ]
+  },
+  {
+    "category": "Photography",
+    "prompts": [
+      "A type of camera lens",
+      "A popular subject for photography",
+      "A famous photographer",
+      "A photography technique involving long exposure"
+    ]
+  },
+  {
+    "category": "Outdoor Adventures",
+    "prompts": [
+      "A piece of gear essential for rock climbing",
+      "A national park known for its hiking trails",
+      "A popular activity during a camping trip",
+      "An animal you might be cautious of when hiking"
+    ]
+  },
+  {
+    "category": "Hobbies",
+    "prompts": [
+      "A hobby that involves collecting items",
+      "A hobby requiring artistic skills",
+      "A hobby you can do with a computer",
+      "A hobby that involves writing"
+    ]
+  },
+  {
+    "category": "Interior Design",
+    "prompts": [
+      "A piece of furniture commonly placed in a living room",
+      "An accessory that often hangs from the ceiling",
+      "A popular type of flooring in modern homes",
+      "A color used for walls to create a calming atmosphere"
+    ]
+  },
+  {
+    "category": "Historical Figures",
+    "prompts": [
+      "A famous female monarch",
+      "A revolutionary leader",
+      "An influential ancient philosopher",
+      "A Nobel Peace Prize winner"
+    ]
+  },
+  {
+    "category": "Ancient Civilizations",
+    "prompts": [
+      "A famous structure built by an ancient civilization",
+      "An ancient civilization known for its mythology",
+      "A famous ruler from an ancient civilization",
+      "An ancient language still studied today"
+    ]
+  },
+  {
+    "category": "Urban Legends",
+    "prompts": [
+      "A creature associated with urban legends",
+      "An object said to bring bad luck in urban legends",
+      "A spooky sound often mentioned in urban legends",
+      "A classic haunted location featured in urban legends"
+    ]
+  },
+  {
+    "category": "Cityscapes",
+    "prompts": [
+      "A city known for its iconic skyline",
+      "A city famous for street food",
+      "A city known for unique architecture",
+      "A city that's popular for its festivals"
+    ]
+  },
+  {
+    "category": "Street Foods",
+    "prompts": [
+      "A popular street food involving skewers",
+      "A street food served from a cart",
+      "A deep-fried street food",
+      "A refreshing street food"
+    ]
+  },
+  {
+    "category": "Mystery",
+    "prompts": [
+      "A classic detective character",
+      "A common plot element in mystery stories",
+      "A setting often used in mystery stories",
+      "A tool or item commonly used by detectives"
+    ]
+  },
+  {
+    "category": "Colors and Patterns",
+    "prompts": [
+      "A bold color you would paint an accent wall",
+      "A common pattern found on clothing",
+      "A color associated with peace",
+      "A color you would paint a nursery"
+    ]
+  },
+  {
+    "category": "Card Games",
+    "prompts": [
+      "A card game that uses a standard 52-card deck",
+      "A card game involving multiple players",
+      "A card game known for bluffing",
+      "A card game that involves trick-taking"
+    ]
+  },
+  {
+    "category": "Comedy Movies",
+    "prompts": [
+      "A famous comedian known for their stand-up specials",
+      "A famous comedy movie from the 2000s",
+      "An actor known for their roles in comedy films",
+      "A comedic TV show that became a movie"
+    ]
+  },
+  {
+    "category": "Famous Inventors",
+    "prompts": [
+      "An inventor known for working with electricity",
+      "An inventor of a major communication device",
+      "An inventor associated with flight",
+      "An inventor known for automotive innovations"
+    ]
+  },
+  {
+    "category": "Music Genres",
+    "prompts": [
+      "A music genre known for its use of electric guitars",
+      "A genre of music known for its storytelling lyrics",
+      "A music genre that is popular for dancing",
+      "A music genre that often features orchestral instruments"
+    ]
+  },
+  {
+    "category": "Dessert Types",
+    "prompts": [
+      "A custard-based dessert",
+      "A dessert served with whipped cream",
+      "A dessert that can be served cold",
+      "A layered dessert"
+    ]
+  },
+  {
+    "category": "Gardening Tools",
+    "prompts": [
+      "A tool used for digging",
+      "Something used to water plants",
+      "A tool for cutting branches",
+      "A tool to remove weeds"
+    ]
+  },
+  {
+    "category": "Carnival Rides",
+    "prompts": [
+      "A thrill ride that goes upside down",
+      "A ride for young children often involving animals or vehicles",
+      "A classic ride that involves spinning in a circle",
+      "A ride where you get splashed with water"
+    ]
+  },
+  {
+    "category": "Beverage Containers",
+    "prompts": [
+      "A type of drink typically stored in a can",
+      "A popular drink you might find in a glass bottle",
+      "A drink commonly found in a cardboard carton",
+      "Something typically used to serve coffee"
+    ]
+  },
+  {
+    "category": "Outdoor Activities",
+    "prompts": [
+      "An outdoor activity that requires a helmet",
+      "An activity that involves climbing",
+      "A location known for hiking",
+      "An activity best enjoyed alone"
+    ]
+  },
+  {
+    "category": "Mountain Adventures",
+    "prompts": [
+      "A type of tree commonly found on a mountain",
+      "An animal you might see while hiking in the mountains",
+      "A popular mountain climbing destination",
+      "A famous mountain range"
+    ]
+  },
+  {
+    "category": "Medieval Times",
+    "prompts": [
+      "A weapon used by knights",
+      "A type of medieval headgear",
+      "A famous medieval structure",
+      "A well-known medieval activity"
+    ]
+  },
+  {
+    "category": "Famous Authors",
+    "prompts": [
+      "A famous author known for writing fantasy novels",
+      "A celebrated author from the 19th century",
+      "An influential American author of the 20th century",
+      "An author famous for modern mystery novels"
+    ]
+  },
+  {
+    "category": "Caf\u00e9s",
+    "prompts": [
+      "A hot beverage commonly served in a caf\u00e9",
+      "Something you might eat with a cup of coffee",
+      "A type of seating you might find in a caf\u00e9",
+      "A popular dessert you can find in a caf\u00e9"
+    ]
+  },
+  {
+    "category": "Jobs and Professions",
+    "prompts": [
+      "A profession that involves wearing a uniform",
+      "A job that typically requires working outdoors",
+      "A profession often seen in hospitals",
+      "A job often associated with high risk"
+    ]
+  },
+  {
+    "category": "Science Experiments",
+    "prompts": [
+      "A common chemical used in school experiments",
+      "An experiment known for producing a foam explosion",
+      "A science experiment known for colorful results",
+      "A science experiment that involves changing temperature"
+    ]
+  },
+  {
+    "category": "Wild Animals",
+    "prompts": [
+      "An animal known for living in trees",
+      "An animal that is especially known for its speed",
+      "A nocturnal animal that can fly",
+      "An animal that is a skilled climber"
+    ]
+  },
+  {
+    "category": "School Subjects",
+    "prompts": [
+      "A subject that requires a lot of math",
+      "A subject where you might do a science experiment",
+      "A subject that involves a lot of reading",
+      "A subject that involves learning a new language"
+    ]
+  },
+  {
+    "category": "Household Chores",
+    "prompts": [
+      "A chore that involves water",
+      "A chore that's done daily in most homes",
+      "A chore that often uses a vacuum cleaner",
+      "A chore that is typically done outdoors"
+    ]
+  },
+  {
+    "category": "Aquatic Animals",
+    "prompts": [
+      "An animal known for its colorful scales",
+      "A sea creature known for its intelligence",
+      "An animal you might find in a coral reef",
+      "An aquatic animal with a long lifespan"
+    ]
+  },
+  {
+    "category": "Flowers and Plants",
+    "prompts": [
+      "A plant known for its medicinal properties",
+      "A flower commonly found in home gardens",
+      "A flowering plant typically seen in tropical climates",
+      "A flower often given on Valentine's Day"
+    ]
+  },
+  {
+    "category": "Architecture Styles",
+    "prompts": [
+      "A type of building known for its height",
+      "A popular roof style used in residential buildings",
+      "A material commonly used for building houses",
+      "An architectural style famed for its simplicity and functionality"
+    ]
+  },
+  {
+    "category": "World Cuisine",
+    "prompts": [
+      "A dish that typically includes noodles",
+      "A famous dish made with rice",
+      "A soup that is enjoyed cold",
+      "A dessert that is often flamb\u00e9ed"
+    ]
+  },
+  {
+    "category": "Religious Symbols",
+    "prompts": [
+      "A symbol commonly associated with Christianity",
+      "A symbol often seen in Hinduism",
+      "A symbol used in Buddhism",
+      "A symbol representing peace"
+    ]
+  },
+  {
+    "category": "Modes of Communication",
+    "prompts": [
+      "A way people communicated before the internet existed",
+      "A common modern way to send a quick message",
+      "A form of non-verbal communication",
+      "A device used for face-to-face video communication"
+    ]
+  },
+  {
+    "category": "Animated Films",
+    "prompts": [
+      "An animated film with talking animals",
+      "An animated film with a princess",
+      "An animated film by Studio Ghibli",
+      "An animated film with a villain redemption arc"
+    ]
+  },
+  {
+    "category": "Modes of Transportation",
+    "prompts": [
+      "A mode of transportation that runs on tracks",
+      "A mode of transportation typically found in cities",
+      "A form of transportation seen in the sky",
+      "A vehicle you can pedal"
+    ]
+  },
+  {
+    "category": "Adventure Movies",
+    "prompts": [
+      "A classic adventure hero",
+      "A famous treasure in adventure films",
+      "A typical setting for an adventure movie",
+      "A common plot device in adventure films"
+    ]
+  },
+  {
+    "category": "Fairy Tales",
+    "prompts": [
+      "A character who lives in a tower",
+      "A creature who helps the protagonist",
+      "A famously evil fairy tale villain",
+      "A magical transformable object"
+    ]
+  },
+  {
+    "category": "Camping Snacks",
+    "prompts": [
+      "A snack you might take on a camping trip",
+      "A sweet treat enjoyed around the campfire",
+      "A savory treat often packed for camping",
+      "A food you can cook over a campfire"
+    ]
+  },
+  {
+    "category": "Magic and Illusions",
+    "prompts": [
+      "A common prop used by magicians",
+      "A famous magician",
+      "A type of magic trick",
+      "A place where magicians often perform"
+    ]
+  },
+  {
+    "category": "Wonders of the World",
+    "prompts": [
+      "A man-made wonder of the ancient world",
+      "A natural wonder you might visit",
+      "A cultural wonder you want to see",
+      "A modern engineering marvel you admire"
+    ]
+  },
+  {
+    "category": "Hairstyles and Hair Care",
+    "prompts": [
+      "A hairstyle commonly associated with the '80s",
+      "A hair care product used for styling",
+      "A hairstyle that requires a lot of maintenance",
+      "A popular hair color option"
+    ]
+  },
+  {
+    "category": "Historical Monuments",
+    "prompts": [
+      "A long-standing monument people travel to see",
+      "A monument known for its architectural style",
+      "A monument associated with ancient civilization",
+      "A monument built before the 19th century"
+    ]
+  },
+  {
+    "category": "Patterns in Nature",
+    "prompts": [
+      "A natural pattern found in plants",
+      "A pattern seen in animal stripes or spots",
+      "A weather pattern related to precipitation",
+      "A pattern formed by ocean waves"
+    ]
+  },
+  {
+    "category": "Toys and Games",
+    "prompts": [
+      "A classic toy that comes in different colors",
+      "A toy that can be controlled with a remote",
+      "A type of puzzle commonly found in newspapers.}]}  ordelivery (s)=[],",
+      "#New Cardinalleum def."
+    ]
+  },
+  {
+    "category": "Baking",
+    "prompts": [
+      "A baked good you might have with tea",
+      "An ingredient often used in baking bread",
+      "A type of cake popular at birthdays",
+      "A topping you might find on a muffin"
+    ]
+  },
+  {
+    "category": "Fictional Creatures",
+    "prompts": [
+      "A creature known to breathe fire",
+      "A creature that lives in the forest",
+      "A creature with wings",
+      "A humanoid creature"
+    ]
+  },
+  {
+    "category": "Childhood Memories",
+    "prompts": [
+      "A classic playground game",
+      "A snack often found in a school lunchbox",
+      "A popular cartoon character from the 90s",
+      "A storybook tale often read before bed"
+    ]
+  },
+  {
+    "category": "Party Themes",
+    "prompts": [
+      "A theme for a kids' birthday party",
+      "A common color scheme for a New Year's Eve party",
+      "A popular music decade for a retro-themed party",
+      "A holiday often picked for a themed costume party"
+    ]
+  },
+  {
+    "category": "Outdoor Sports",
+    "prompts": [
+      "A sport where teammates pass a baton",
+      "A sport involving a board and water",
+      "A sport where players wear helmets",
+      "A sport often played on sand"
+    ]
+  },
+  {
+    "category": "Dinosaurs",
+    "prompts": [
+      "A well-known dinosaur with sharp teeth",
+      "A dinosaur known for its long neck",
+      "A herbivorous dinosaur with a frill or crest",
+      "A dinosaur that could fly"
+    ]
+  },
+  {
+    "category": "Martial Arts",
+    "prompts": [
+      "A martial art known for its kicks",
+      "A traditional weapon used in martial arts",
+      "A martial art that focuses on striking",
+      "A martial art that involves throws and grappling"
+    ]
+  },
+  {
+    "category": "Fictional Worlds",
+    "prompts": [
+      "A fictional world where dragons exist",
+      "A fictional world associated with a famous wizard",
+      "A fictional world with talking animals",
+      "A fictional world with a dystopian society"
+    ]
+  },
+  {
+    "category": "Haunted Places",
+    "prompts": [
+      "A famous haunted house in the United States",
+      "A popular haunted castle in Europe",
+      "A notoriously haunted hotel",
+      "A historical haunted site in Asia"
+    ]
+  },
+  {
+    "category": "Wild West",
+    "prompts": [
+      "A famous cowboy actor from old Western films",
+      "An iconic setting often seen in Western movies",
+      "A Wild West activity that cowboys are often depicted doing",
+      "A legendary outlaw or lawman of the Wild West"
+    ]
+  },
+  {
+    "category": "Space Technology",
+    "prompts": [
+      "A piece of equipment essential for an astronaut",
+      "A notable success in space technology",
+      "A planet people would want to visit",
+      "A type of rocket fuel"
+    ]
+  },
+  {
+    "category": "Island Activities",
+    "prompts": [
+      "An activity you might do on a tropical island",
+      "An aquatic activity often enjoyed in clear island waters",
+      "A type of fruit drink you might find on an island",
+      "A type of dance commonly seen at island festivals"
+    ]
+  },
+  {
+    "category": "Futuristic Concepts",
+    "prompts": [
+      "A type of vehicle that might be used in the future",
+      "An invention that could change daily life in the future",
+      "A futuristic food preparation method",
+      "A type of wearable technology in the future"
+    ]
+  },
+  {
+    "category": "Nautical Equipment",
+    "prompts": [
+      "An essential tool for navigation at sea",
+      "An important piece of safety equipment on a ship",
+      "A device used for communicating between ships",
+      "A type of boat commonly used for fishing"
+    ]
+  },
+  {
+    "category": "Mystery Novels",
+    "prompts": [
+      "A detective with a unique gimmick",
+      "A common setting for a mystery novel",
+      "A popular mystery novel trope",
+      "A famous sleuth's indispensible tool"
+    ]
+  },
+  {
+    "category": "Art Styles",
+    "prompts": [
+      "A painting technique involving texture",
+      "A form of abstract art",
+      "A popular digital art software",
+      "An art style that originated in the 20th century"
+    ]
+  },
+  {
+    "category": "Historical Landmarks",
+    "prompts": [
+      "A historical building that is often visited by tourists",
+      "A monument built to commemorate a famous leader",
+      "A famous ancient city ruins",
+      "A restored medieval castle"
+    ]
+  },
+  {
+    "category": "Unique Food Combinations",
+    "prompts": [
+      "A fruit commonly put in a salad",
+      "A food often eaten with peanut butter",
+      "An unusual ice cream flavor",
+      "A vegetable you wouldn\u2019t expect in a cake"
+    ]
+  },
+  {
+    "category": "Sweet Snacks",
+    "prompts": [
+      "A candy that comes in a variety of flavors",
+      "A chocolate bar with nuts",
+      "An ice cream flavor with fruit",
+      "A snack that starts with the letter 'C'"
+    ]
+  },
+  {
+    "category": "Underwater Exploration",
+    "prompts": [
+      "An equipment used by divers",
+      "A creature found in the deep sea",
+      "A famous shipwreck explored underwater",
+      "A type of deep sea research vehicle"
+    ]
+  },
+  {
+    "category": "Dance Styles",
+    "prompts": [
+      "A dance style popular in Latin America",
+      "A dance style known for its acrobatics",
+      "A dance style often performed in a line with other people",
+      "A type of dance that involves a lot of spins"
+    ]
+  },
+  {
+    "category": "Biking",
+    "prompts": [
+      "A type of bicycle used for off-road cycling",
+      "A famous cycling race",
+      "A common biking accessory",
+      "A popular biking trail"
+    ]
+  },
+  {
+    "category": "Luxury Cars",
+    "prompts": [
+      "A luxury car brand known for its speed",
+      "A luxury car color often associated with elegance",
+      "A country famous for producing luxury cars",
+      "A luxury car feature that enhances comfort"
+    ]
+  },
+  {
+    "category": "Jewelry and Accessories",
+    "prompts": [
+      "A type of jewelry often worn on the ears",
+      "A gemstone commonly used in engagement rings",
+      "A fashion accessory that keeps you warm in winter",
+      "A type of necklace chain"
+    ]
+  },
+  {
+    "category": "Parks and Recreation",
+    "prompts": [
+      "A childhood game often played in parks",
+      "An activity you usually need a ball for in a park",
+      "A place to sit in a park",
+      "A type of flower commonly found in public parks"
+    ]
+  },
+  {
+    "category": "Space Missions",
+    "prompts": [
+      "A famous human spaceflight mission",
+      "A well-known unmanned space probe",
+      "A celestial body frequently visited by missions",
+      "A space organization involved in interplanetary missions"
+    ]
+  },
+  {
+    "category": "Everyday inconveniences",
+    "prompts": [
+      "An appliance that often breaks down at the most inconvenient time",
+      "An object often misplaced in the house",
+      "An annoyance during a typical commute",
+      "A household chore people often procrastinate"
+    ]
+  },
+  {
+    "category": "Office Supplies",
+    "prompts": [
+      "An item often found on a desk",
+      "A type of adhesive product",
+      "A tool used for cutting paper",
+      "A commonly used paper size"
+    ]
+  },
+  {
+    "category": "Traditional Folklore",
+    "prompts": [
+      "A character commonly found in traditional fairytales",
+      "A mythical animal in folklore",
+      "A common setting for a folklore story",
+      "A typical theme in folktales"
+    ]
+  },
+  {
+    "category": "Dinosaur Types",
+    "prompts": [
+      "A dinosaur known for having horns",
+      "A dinosaur that walked on two legs",
+      "A dinosaur that was a herbivore",
+      "A dinosaur featured in 'Jurassic Park'"
+    ]
+  },
+  {
+    "category": "Sandwich Making",
+    "prompts": [
+      "A common spread used on sandwiches",
+      "A type of bread used for sandwiches",
+      "A sandwich filling that is often grilled",
+      "A popular sandwich that's commonly eaten at breakfast"
+    ]
+  },
+  {
+    "category": "Languages and Dialects",
+    "prompts": [
+      "A language with a unique alphabet",
+      "A language known for being tonal",
+      "A dialect spoken in a specific region of the United States",
+      "A language often associated with romance"
+    ]
+  },
+  {
+    "category": "Ancient Myths",
+    "prompts": [
+      "A mythical hero known for his strength",
+      "A legendary creature with multiple heads",
+      "A famous magical artifact from mythology",
+      "A god or goddess associated with love and beauty"
+    ]
+  },
+  {
+    "category": "City Skylines",
+    "prompts": [
+      "A building that is commonly part of a city skyline",
+      "An activity you might do while overlooking a city skyline",
+      "A common feature seen in city skylines at night",
+      "A famous city known for its impressive skyline"
+    ]
+  },
+  {
+    "category": "Comic Book Characters",
+    "prompts": [
+      "A character known for wearing a cape",
+      "A superhero team with multiple members",
+      "A comic book character who is a billionaire",
+      "A character who gained powers through an experiment"
+    ]
+  },
+  {
+    "category": "Outdoor Furniture",
+    "prompts": [
+      "A type of chair you might find on a patio",
+      "A type of table common in backyard settings",
+      "A type of outdoor furniture material",
+      "A protection used for outdoor furniture"
+    ]
+  },
+  {
+    "category": "Science Fiction Movies",
+    "prompts": [
+      "A famous sci-fi movie director",
+      "A sci-fi movie set in space",
+      "A robot from a sci-fi movie",
+      "An alien species from sci-fi films"
+    ]
+  },
+  {
+    "category": "DIY Home Projects",
+    "prompts": [
+      "A common tool used in woodworking",
+      "A type of paint finish used on walls",
+      "A material often used for home insulation",
+      "A popular home renovation show"
+    ]
+  },
+  {
+    "category": "Wonders of the Plant Kingdom",
+    "prompts": [
+      "A tree known for its towering height",
+      "A plant that is often used as a natural remedy",
+      "A plant admired for its colorful flowers",
+      "A type of cactus that is commonly found in deserts"
+    ]
+  },
+  {
+    "category": "Musicals",
+    "prompts": [
+      "A musical set in New York City",
+      "A musical with a famous dance sequence",
+      "A musical based on a movie",
+      "A musical with a love story"
+    ]
+  },
+  {
+    "category": "Hiking Trails",
+    "prompts": [
+      "A famous hiking trail in the United States",
+      "An essential item to carry on a hiking trail",
+      "A wildlife animal you might spot on a hiking trail",
+      "A type of terrain you might encounter on a hiking trail"
+    ]
+  },
+  {
+    "category": "Medieval Weapons",
+    "prompts": [
+      "A handheld medieval weapon used by knights",
+      "A projectile weapon used in medieval battles",
+      "A weapon commonly used in medieval siege warfare",
+      "An armor piece worn by medieval knights"
+    ]
+  },
+  {
+    "category": "Weddings",
+    "prompts": [
+      "A traditional wedding color",
+      "A flower commonly used in wedding bouquets",
+      "A popular wedding gift",
+      "A common wedding reception dance"
+    ]
+  },
+  {
+    "category": "Exercise Routines",
+    "prompts": [
+      "A popular form of cardio exercise",
+      "An exercise that primarily focuses on the core",
+      "A stretching exercise",
+      "A yoga pose that begins with downward-facing dog"
+    ]
+  },
+  {
+    "category": "Snack Foods",
+    "prompts": [
+      "A snack food that comes in a bag",
+      "A crunchy snack",
+      "A sweet snack",
+      "A popular movie snack"
+    ]
+  },
+  {
+    "category": "Culinary Herbs",
+    "prompts": [
+      "An herb often used in Italian cooking",
+      "An herb that is commonly used in teas",
+      "An herb associated with French cuisine",
+      "An herb that pairs well with chicken"
+    ]
+  },
+  {
+    "category": "Natural Disasters",
+    "prompts": [
+      "A natural disaster that involves water",
+      "A natural disaster that is given a name",
+      "A natural disaster that puts pressure on emergency services",
+      "A natural disaster that frequently occurs in Asia"
+    ]
+  },
+  {
+    "category": "Kitchen Utensils",
+    "prompts": [
+      "A kitchen utensil used for mixing",
+      "A kitchen utensil that has a blade",
+      "A utensil commonly used for flipping food in a pan",
+      "A utensil used primarily for measuring"
+    ]
+  }
+]

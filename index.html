@@ -88,19 +88,24 @@
     </div>
 
     <script type="module">
-      import { cards } from "./cards.js";
-
-      // pick a random card
-      const card = cards[Math.floor(Math.random() * cards.length)];
-
-      // render
-      document.getElementById("category").textContent = card.category;
-      const ul = document.getElementById("prompts");
-      card.prompts.forEach((p) => {
-        const li = document.createElement("li");
-        li.textContent = p;
-        ul.append(li);
-      });
+      async function loadCards() {
+        try {
+          const response = await fetch("./cards.json");
+          if (!response.ok) throw new Error("Network response was not ok");
+          const cards = await response.json();
+          const card = cards[Math.floor(Math.random() * cards.length)];
+          document.getElementById("category").textContent = card.category;
+          const ul = document.getElementById("prompts");
+          card.prompts.forEach((p) => {
+            const li = document.createElement("li");
+            li.textContent = p;
+            ul.appendChild(li);
+          });
+        } catch (err) {
+          console.error("Failed to load cards.json:", err);
+        }
+      }
+      loadCards();
     </script>
   </body>
 </html>
