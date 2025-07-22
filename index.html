@@ -33,13 +33,27 @@
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transform-style: preserve-3d;
+
+        /* initial "flipped‑away" state */
         transform: rotateY(-90deg);
         opacity: 0;
         transition: transform 0.6s ease, opacity 0.6s ease;
+        touch-action: pan-y;
       }
       .card.reveal {
+        /* flip‑in state */
         transform: rotateY(0);
         opacity: 1;
+      }
+      .card.swiping {
+        transition: none;
+      }
+      /* flip‑out animation */
+      .card.swipe-out {
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        /* page flips away around Y axis */
+        transform: rotateY(90deg);
+        opacity: 0;
       }
 
       /* header gradient */
@@ -132,41 +146,35 @@
       }
       .modal-content {
         background: #fff;
-        padding: 2rem; /* more generous padding */
+        padding: 2rem;
         border-radius: 8px;
-        max-width: 400px; /* cap at 400px wide */
-        width: 90%; /* or 90% of viewport */
+        max-width: 400px;
+        width: 90%;
         position: relative;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        line-height: 1.5; /* easier to read text */
-        max-height: 80vh; /* stay within viewport */
-        overflow-y: auto; /* scroll if too tall */
+        line-height: 1.5;
+        max-height: 80vh;
+        overflow-y: auto;
       }
-
-      /* Title spacing */
       .modal-content h2 {
         margin-top: 0;
-        margin-bottom: 1rem; /* space below heading */
+        margin-bottom: 1rem;
         font-size: 1.5rem;
       }
-
-      /* Paragraph spacing */
       .modal-content p {
-        margin-bottom: 1rem; /* consistent gap between paragraphs */
+        margin-bottom: 1rem;
         color: #333;
       }
-
-      /* Close button tweaks */
       .modal-close {
         position: absolute;
-        top: 0.75rem; /* pull it in slightly */
+        top: 0.75rem;
         right: 0.75rem;
         font-size: 1.25rem;
         font-weight: bold;
         color: #333;
-        background: none; /* remove default background */
+        background: none;
         border: none;
-        padding: 0.25rem; /* bigger hit area */
+        padding: 0.25rem;
         cursor: pointer;
         line-height: 1;
       }
@@ -176,7 +184,7 @@
     </style>
   </head>
   <body>
-    <div class="card">
+    <div class="card" id="card">
       <div class="card-header">
         <h1 id="category">Category</h1>
         <button id="help-btn" class="help-button" aria-label="How to play">
@@ -189,7 +197,7 @@
         </ul>
       </div>
       <div class="card-footer">
-        <small>Refresh for a new card</small>
+        <small>Refresh or swipe for new card</small>
       </div>
     </div>
 
@@ -230,35 +238,95 @@
     </div>
 
     <script type="module">
-      async function loadCards() {
-        try {
-          const response = await fetch("./cards.json");
-          if (!response.ok) throw new Error("Network response was not ok");
-          const cards = await response.json();
-          const cardData = cards[Math.floor(Math.random() * cards.length)];
-          document.getElementById("category").textContent = cardData.category;
-          const ul = document.getElementById("prompts");
-          ul.innerHTML = ""; // clear old prompts
-          cardData.prompts.forEach((p) => {
-            const li = document.createElement("li");
-            li.textContent = p;
-            ul.appendChild(li);
-          });
+      let cards = [];
+      let startX = 0,
+        currentX = 0,
+        isDragging = false;
+      const threshold = 100,
+        card = document.getElementById("card");
 
-          const card = document.querySelector(".card");
-          requestAnimationFrame(() => {
-            card.classList.add("reveal");
-          });
+      // Load cards.json once
+      async function initCards() {
+        try {
+          const res = await fetch("./cards.json");
+          if (!res.ok) throw new Error("Network response was not ok");
+          cards = await res.json();
+          // show first card
+          showRandomCard();
         } catch (err) {
           console.error("Failed to load cards.json:", err);
         }
       }
 
-      // Modal functionality
+      function showRandomCard() {
+        const { category, prompts } =
+          cards[Math.floor(Math.random() * cards.length)];
+
+        // reset to flipped-away state
+        card.classList.remove("reveal", "swipe-out");
+        card.style.transform = ""; // fallback to CSS rotateY(-90deg)
+
+        // populate content
+        document.getElementById("category").textContent = category;
+        const ul = document.getElementById("prompts");
+        ul.innerHTML = "";
+        prompts.forEach((p) => {
+          const li = document.createElement("li");
+          li.textContent = p;
+          ul.appendChild(li);
+        });
+
+        // trigger the flip-in
+        requestAnimationFrame(() => {
+          card.classList.add("reveal");
+        });
+      }
+
+      function handleGestureStart(e) {
+        isDragging = true;
+        startX = e.touches ? e.touches[0].clientX : e.clientX;
+        card.classList.add("swiping");
+      }
+      function handleGestureMove(e) {
+        if (!isDragging) return;
+        currentX = e.touches ? e.touches[0].clientX : e.clientX;
+        const dx = currentX - startX;
+        // show slight drag but keep Y rotation disabled while dragging
+        card.style.transform = `translateX(${dx}px) rotateY(0deg)`;
+      }
+      function handleGestureEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        card.classList.remove("swiping");
+        const dx = currentX - startX;
+
+        if (Math.abs(dx) > threshold) {
+          // flip-out instead of slide-off
+          card.classList.add("swipe-out");
+          card.style.transform = `rotateY(90deg)`;
+          // after flip animation, show next card
+          setTimeout(showRandomCard, 400);
+        } else {
+          // revert if not past threshold
+          card.style.transform = "";
+        }
+      }
+
+      // attach gestures
+      ["touchstart", "mousedown"].forEach((evt) =>
+        card.addEventListener(evt, handleGestureStart)
+      );
+      ["touchmove", "mousemove"].forEach((evt) =>
+        document.addEventListener(evt, handleGestureMove)
+      );
+      ["touchend", "mouseup"].forEach((evt) =>
+        document.addEventListener(evt, handleGestureEnd)
+      );
+
+      // modal
       const helpBtn = document.getElementById("help-btn");
       const modal = document.getElementById("help-modal");
       const closeBtn = document.getElementById("close-modal");
-
       helpBtn.addEventListener("click", () => {
         modal.style.display = "flex";
         modal.setAttribute("aria-hidden", "false");
@@ -274,7 +342,8 @@
         }
       });
 
-      loadCards();
+      // initialize
+      initCards();
     </script>
   </body>
 </html>
