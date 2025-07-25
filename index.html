@@ -284,6 +284,7 @@
       }
 
       function handleGestureStart(e) {
+        if (modal.style.display === "flex") return;
         isDragging = true;
         startX = e.touches ? e.touches[0].clientX : e.clientX;
         card.classList.add("swiping");
