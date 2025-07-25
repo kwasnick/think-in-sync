@@ -1,6 +1,6 @@
 """
 Usage:
-python generate_cards.py --existing cards.json
+python generate_cards.py --existing cards.json --temperature 1.0
 """
 
 import argparse
@@ -138,7 +138,7 @@ def save_card(path: str, card: Card) -> None:
         sys.exit(1)
 
 
-def generate_card(existing: list[Card]) -> PotentialCard:
+def generate_card(existing: list[Card], temperature: float) -> PotentialCard:
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     system_message = (
@@ -152,7 +152,7 @@ def generate_card(existing: list[Card]) -> PotentialCard:
         + "\n\n"
         "Generate a new card."
     )
-    logging.info("Requesting new card generation...")
+    logging.info(f"Requesting new card generation with temperature {temperature}...")
     resp = client.beta.chat.completions.parse(
         model=API_MODEL,
         messages=[
@@ -160,6 +160,7 @@ def generate_card(existing: list[Card]) -> PotentialCard:
             {"role": "user", "content": user_message},
         ],
         response_format=PotentialCard,
+        temperature=temperature,
     )
 
     assert (
@@ -174,11 +175,11 @@ def generate_card(existing: list[Card]) -> PotentialCard:
     return card
 
 
-def main(path: str):
+def main(path: str, temperature: float):
     existing = load_existing_cards(path)
     while True:
         try:
-            potential_card = generate_card(existing)
+            potential_card = generate_card(existing, temperature)
             card = potential_card.to_card()
             save_card(path, card)
             existing = load_existing_cards(path)
@@ -197,5 +198,12 @@ if __name__ == "__main__":
         required=True,
         help="Path to JSON file of existing cards",
     )
+    parser.add_argument(
+        "--temperature",
+        "-t",
+        type=float,
+        required=False,
+        default=1.0,
+    )
     args = parser.parse_args()
-    main(args.existing)
+    main(args.existing, args.temperature)

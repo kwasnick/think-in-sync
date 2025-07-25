@@ -1285,5 +1285,518 @@
       "A utensil commonly used for flipping food in a pan",
       "A utensil used primarily for measuring"
     ]
+  },
+  {
+    "category": "Tree Varieties",
+    "prompts": [
+      "A tree known for producing nuts",
+      "A tree often associated with a tropical environment",
+      "A tree commonly used for Christmas",
+      "A tree that changes color in the fall"
+    ]
+  },
+  {
+    "category": "National Parks",
+    "prompts": [
+      "A national park known for its geysers",
+      "A US national park located in the desert",
+      "A national park where you can see glaciers",
+      "A national park famous for its redwood trees"
+    ]
+  },
+  {
+    "category": "Camping Activities",
+    "prompts": [
+      "An activity done around a campfire",
+      "A common activity at a campsite during the day",
+      "A game often played when camping",
+      "A popular way to cook food while camping"
+    ]
+  },
+  {
+    "category": "Home Improvement",
+    "prompts": [
+      "A tool commonly used for measuring",
+      "A color often used for painting living rooms",
+      "An essential power tool for renovations",
+      "A popular material for flooring"
+    ]
+  },
+  {
+    "category": "Pets",
+    "prompts": [
+      "A type of small animal people commonly keep as a pet",
+      "An exotic pet someone might have",
+      "A common pet bird",
+      "A pet that might live in an aquarium"
+    ]
+  },
+  {
+    "category": "Fashion Accessories",
+    "prompts": [
+      "A type of hat that's often worn for fashion rather than function",
+      "A must-have accessory for winter outfits",
+      "An accessory often used for evening events",
+      "A popular type of footwear for summer"
+    ]
+  },
+  {
+    "category": "Dance Forms",
+    "prompts": [
+      "A dance form that traditionally involves pairs",
+      "A dance style with a cultural origin in South America",
+      "A dance style known for spins and jumps",
+      "A dance style popular in nightclubs"
+    ]
+  },
+  {
+    "category": "Breakfast Beverages",
+    "prompts": [
+      "A warm beverage often consumed in the morning",
+      "A beverage people might have in the morning to boost energy",
+      "A beverage many people add sugar to in the morning",
+      "A drink associated with breakfast that is citrus-based"
+    ]
+  },
+  {
+    "category": "Famous Duos",
+    "prompts": [
+      "A famous duo known for solving mysteries",
+      "A famous comedy duo",
+      "A fictional duo known for their friendship",
+      "A musical duo"
+    ]
+  },
+  {
+    "category": "Crafting",
+    "prompts": [
+      "A type of paper used in crafting",
+      "A tool commonly used in sewing",
+      "A popular crafting project during the holidays",
+      "A technique used in knitting"
+    ]
+  },
+  {
+    "category": "Spices and Seasonings",
+    "prompts": [
+      "A spice commonly used in Indian cuisine",
+      "A seasoning often used on grilled vegetables",
+      "A herb often used in Italian cooking",
+      "A seasoning used in barbecue rubs"
+    ]
+  },
+  {
+    "category": "Historical Buildings",
+    "prompts": [
+      "A famous building built in the 1800s",
+      "A building known for its clock tower",
+      "A castle located in Europe",
+      "A building that is considered a UNESCO World Heritage Site"
+    ]
+  },
+  {
+    "category": "Circus Acts",
+    "prompts": [
+      "A common animal featured in circus performances",
+      "A typical circus act involving great heights",
+      "An essential circus role focused on entertaining with humor",
+      "A common structure used in circus performances"
+    ]
+  },
+  {
+    "category": "Mystical Places",
+    "prompts": [
+      "A location associated with magical creatures",
+      "A mythical place often sought after in legends",
+      "A terrain feature rumored to be enchanted",
+      "A famed city of legend known for its wonders"
+    ]
+  },
+  {
+    "category": "Famous Explorers",
+    "prompts": [
+      "An explorer who ventured to the North or South Pole",
+      "An explorer associated with the Age of Discovery",
+      "An explorer known for discovering new lands",
+      "An explorer celebrated for voyages along river routes"
+    ]
+  },
+  {
+    "category": "Nighttime Relaxation",
+    "prompts": [
+      "A beverage people might drink to unwind before bed",
+      "A type of music someone might play to relax in the evening",
+      "A scent that people find soothing at night",
+      "An activity people often do to relax before sleeping"
+    ]
+  },
+  {
+    "category": "Boardwalk Attractions",
+    "prompts": [
+      "A classic carnival game often found on a boardwalk",
+      "A popular snack to eat while strolling on a boardwalk",
+      "A ride that can often be found on a boardwalk amusement area",
+      "An animal you might see people trying to win at a boardwalk game stall"
+    ]
+  },
+  {
+    "category": "Undercover Operations",
+    "prompts": [
+      "A common disguise for a spy in a movie",
+      "A gadget you might see in an espionage film",
+      "A typical location for a secret meeting in spy movies",
+      "A classic spy vehicle"
+    ]
+  },
+  {
+    "category": "Folklore Creatures",
+    "prompts": [
+      "A creature known for its ability to shapeshift",
+      "A creature that is said to guard treasure",
+      "A creature associated with water",
+      "A creature known for granting wishes"
+    ]
+  },
+  {
+    "category": "Exploratory Cuisines",
+    "prompts": [
+      "A dish known for being spicy",
+      "A cuisine often eaten with chopsticks",
+      "A traditional food often eaten at festivals",
+      "A common dessert that includes fruit"
+    ]
+  },
+  {
+    "category": "Dessert Beverages",
+    "prompts": [
+      "A warm drink topped with whipped cream",
+      "A cold dessert drink popular in summer",
+      "A dessert beverage that is often associated with Christmas",
+      "A beverage dessert made with ice cream"
+    ]
+  },
+  {
+    "category": "Luxurious Resorts",
+    "prompts": [
+      "A must-have feature for a luxury resort",
+      "A type of accommodation often available at a luxury resort",
+      "A popular Caribbean island known for luxury resorts",
+      "A city famous for luxury beach resorts"
+    ]
+  },
+  {
+    "category": "Vintage Toys",
+    "prompts": [
+      "A classic toy made of wood",
+      "A toy that was popular in the 1980s",
+      "A toy that often comes with accessories",
+      "A toy that bounces"
+    ]
+  },
+  {
+    "category": "Instrument Innovations",
+    "prompts": [
+      "An instrument that uses a keyboard",
+      "A woodwind instrument",
+      "An instrument played with a bow",
+      "An instrument commonly found in a marching band"
+    ]
+  },
+  {
+    "category": "Art Supplies",
+    "prompts": [
+      "A type of paint used by artists",
+      "A surface artists paint on",
+      "An item used for sketching",
+      "A cutting tool used by artists"
+    ]
+  },
+  {
+    "category": "Urban Transportation",
+    "prompts": [
+      "An underground transportation system",
+      "A type of bridge found in cities",
+      "A public space commonly found in city centers",
+      "A common urban mode of personal transport"
+    ]
+  },
+  {
+    "category": "Middle Ages",
+    "prompts": [
+      "A title of nobility in the Middle Ages",
+      "A type of medieval armor",
+      "A medieval siege weapon",
+      "A famous medieval castle"
+    ]
+  },
+  {
+    "category": "Winter Clothing",
+    "prompts": [
+      "A type of winter coat",
+      "A common fabric for scarves",
+      "A pattern commonly found on winter sweaters",
+      "A brand known for winter boots"
+    ]
+  },
+  {
+    "category": "Summer Activities",
+    "prompts": [
+      "A way to stay cool in the summer",
+      "An outdoor activity often done at a park",
+      "A summer treat that melts easily",
+      "A popular summer festival or fair"
+    ]
+  },
+  {
+    "category": "Kitchen Appliances",
+    "prompts": [
+      "A common appliance used for heating food",
+      "An essential kitchen appliance for preserving food",
+      "A device often used for making smoothies",
+      "An appliance used to make bread"
+    ]
+  },
+  {
+    "category": "Classical Music",
+    "prompts": [
+      "A composer from the Romantic era",
+      "An instrument commonly used in orchestras",
+      "A well-known classical symphony",
+      "A famous opera"
+    ]
+  },
+  {
+    "category": "Childhood Toys",
+    "prompts": [
+      "A toy that makes noise",
+      "A toy that involves stacking",
+      "A toy that requires assembly",
+      "A toy that imitates a real-life vehicle"
+    ]
+  },
+  {
+    "category": "Cereal Flavors",
+    "prompts": [
+      "A cereal flavor you'd expect to be fruity",
+      "A cereal flavor that's chocolatey",
+      "A cereal with a maple flavor",
+      "A cereal flavor best described as nutty"
+    ]
+  },
+  {
+    "category": "Renovation",
+    "prompts": [
+      "An essential tool used for demolition",
+      "A type of flooring commonly installed in living rooms",
+      "An insulation material used to conserve heat in homes",
+      "A popular wall color used in modern bathrooms"
+    ]
+  },
+  {
+    "category": "Garden Festivals",
+    "prompts": [
+      "A plant commonly seen at a garden festival",
+      "An activity you might do at a garden festival",
+      "An item of clothing often worn to a garden festival",
+      "A piece of music you might hear at a garden festival"
+    ]
+  },
+  {
+    "category": "Circus Entertainment",
+    "prompts": [
+      "A circus act that often involves balancing",
+      "A popular animal often featured in traditional circuses",
+      "A colorful accessory worn by clowns",
+      "A circus role that requires courage and precision"
+    ]
+  },
+  {
+    "category": "Television Game Shows",
+    "prompts": [
+      "A classic game show with a wheel",
+      "A game show where contestants answer questions",
+      "A game show that features physical challenges",
+      "A game show that involves solving puzzles"
+    ]
+  },
+  {
+    "category": "Common Sayings",
+    "prompts": [
+      "A phrase encouraging someone to relax",
+      "A saying about unexpected surprises",
+      "A saying encouraging perseverance after failure",
+      "A common saying about teamwork"
+    ]
+  },
+  {
+    "category": "Workshops and DIY",
+    "prompts": [
+      "A DIY project involving wood",
+      "An essential tool in a workshop",
+      "An item often repurposed in DIY projects",
+      "A metal frequently used in DIY arts"
+    ]
+  },
+  {
+    "category": "Cinema Genres",
+    "prompts": [
+      "A cinema genre known for making people cry",
+      "A cinema genre with a lot of action-packed scenes",
+      "A cinema genre set in outer space",
+      "A cinema genre with animated characters as protagonists"
+    ]
+  },
+  {
+    "category": "Culinary Techniques",
+    "prompts": [
+      "A culinary technique using direct heat",
+      "A method of preserving food",
+      "A way to tenderize meat",
+      "A baking method"
+    ]
+  },
+  {
+    "category": "Gadgets and Gizmos",
+    "prompts": [
+      "A gadget you might see in a spy movie",
+      "A tech gadget that has changed home life",
+      "A tool that simplifies daily tasks",
+      "A device people use for photography"
+    ]
+  },
+  {
+    "category": "Unique Outdoor Skills",
+    "prompts": [
+      "A survival skill needed in the wild",
+      "A tool that helps during a rainy hiking trip",
+      "A plant that could be useful for wilderness survival",
+      "A unique skill needed for rock climbing"
+    ]
+  },
+  {
+    "category": "Street Art",
+    "prompts": [
+      "A location where you might see street murals",
+      "A famous street artist",
+      "A city known for vibrant street art",
+      "An element you might find in graffiti art"
+    ]
+  },
+  {
+    "category": "Musical Genres Mashup",
+    "prompts": [
+      "A musical genre that's known for strong guitar riffs",
+      "A genre often associated with saxophone solos",
+      "A cultural music genre known for accordion playing",
+      "A music genre that typically includes breakdancing"
+    ]
+  },
+  {
+    "category": "Castles and Palaces",
+    "prompts": [
+      "A famous castle or palace known for its gardens",
+      "A castle or palace associated with ghost stories",
+      "A royal residence that is now used as a tourist attraction",
+      "A castle or palace famous for its architecture"
+    ]
+  },
+  {
+    "category": "Camping Adventures",
+    "prompts": [
+      "The necessity you would bring on a camping trip",
+      "A type of creature you might encounter while camping in the woods",
+      "The meal you look forward to most while camping",
+      "What game you would likely play during a camping trip"
+    ]
+  },
+  {
+    "category": "Modern Gadgets",
+    "prompts": [
+      "A gadget you might use to keep track of fitness",
+      "A newer gadget used in a kitchen setting",
+      "A gadget used primarily in the field of photography or videography",
+      "A piece of technology commonly used for reading"
+    ]
+  },
+  {
+    "category": "Magic Tricks",
+    "prompts": [
+      "A commonly used object in magic tricks",
+      "A type of illusion that involves an audience member",
+      "A mystical-sounding phrase often uttered during a magic trick",
+      "A famous magician known for card tricks"
+    ]
+  },
+  {
+    "category": "Ancient Traditions",
+    "prompts": [
+      "A type of Olympic sport from ancient times",
+      "A dance associated with ancient cultures",
+      "A notable ancient philosopher",
+      "An ancient writing system"
+    ]
+  },
+  {
+    "category": "Paranormal Activities",
+    "prompts": [
+      "A supernatural creature often depicted with fangs",
+      "A common location where hauntings are reported",
+      "A tool used by paranormal investigators",
+      "A well-known haunted location from any popular movie"
+    ]
+  },
+  {
+    "category": "Indoor Plants",
+    "prompts": [
+      "A plant that improves air quality in a room",
+      "An easy-to-care-for plant that grows well indoors",
+      "A flowering indoor plant",
+      "A succulent suitable for indoor growth"
+    ]
+  },
+  {
+    "category": "Ancient Seafaring",
+    "prompts": [
+      "A famous seafaring civilization",
+      "A sea creature sailors might encounter or envision",
+      "A legendary ship",
+      "A famous exploratory voyage from history"
+    ]
+  },
+  {
+    "category": "Tropical Fruits",
+    "prompts": [
+      "A fruit that is commonly used in summer drinks",
+      "A fruit often considered to have an intense flavor",
+      "A fruit used in desserts",
+      "A fruit that you usually peel before eating"
+    ]
+  },
+  {
+    "category": "Ancient Wonders",
+    "prompts": [
+      "A wonder of the ancient world that is not completely standing today",
+      "A location where an ancient wonder was found",
+      "A purpose served by ancient wonders",
+      "A material used in the construction of ancient wonders"
+    ]
+  },
+  {
+    "category": "Mystery Movies",
+    "prompts": [
+      "A famous detective character",
+      "An iconic mysterious location in a movie",
+      "A plot twist from a mystery movie",
+      "A sleuth's famous sidekick"
+    ]
+  },
+  {
+    "category": "Festive Traditions",
+    "prompts": [
+      "A gift often given during the holidays",
+      "A type of song often sung during festive occasions",
+      "A popular color theme for festive decorations",
+      "A beverage commonly associated with holiday celebrations"
+    ]
   }
 ]
