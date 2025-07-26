@@ -6,21 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Think In Sync</title>
     <style>
-      /* reset & body */
+      /* reset & variables */
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
+      :root {
+        /* neutrals */
+        --color-white: #ffffff;
+        --color-background: #f7f7f7; /* page/card background */
+        --color-border: #000000; /* card border & accents */
+        --color-shadow: rgba(0, 0, 0, 0.1); /* subtle drop‑shadow */
+
+        /* text */
+        --text-primary: #1e1e1e; /* headings */
+        --text-secondary: #333333; /* body copy */
+
+        /* gradient accent */
+        --accent-start: #ffd772; /* left (yellow) */
+        --accent-end: #ff5f7e; /* right (pink) */
+
+        /* ready‑to‑use gradient */
+        --accent-gradient: linear-gradient(
+          90deg,
+          var(--accent-start) 0%,
+          var(--accent-end) 100%
+        );
+      }
+
+      /* page background & base text color */
       body {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #f2f2f2;
-        min-height: 100vh;
+        flex-direction: column;
+        height: 100vh;
+        background: var(--color-background);
+        color: var(--text-secondary);
         font-family: sans-serif;
         padding: 1rem;
         perspective: 1000px;
+      }
+
+      /* header bar */
+      .app-header {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--color-white);
+        border-bottom: 2px solid var(--color-border);
+        padding: 0.5rem 1rem;
+        margin: 0 auto 1rem;
+      }
+      .icon-btn {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 8px;
+        text-align: center;
+        width: 66px;
+        background: var(--color-white);
+        color: var(--text-secondary);
+        text-decoration: none;
+        height: 100%;
+      }
+      .icon-btn .icon {
+        font-size: 32px;
+        line-height: 1;
+      }
+      .icon-btn .label {
+        font-size: 12px;
+        margin-top: 4px;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+      .header-title {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--text-primary);
+      }
+
+      /* main area to center card */
+      .app-main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
       }
 
       /* card container */
@@ -28,11 +107,11 @@
         position: relative;
         width: 100%;
         max-width: 400px;
-        background: white;
-        border: 2px solid #000;
+        background: var(--color-white);
+        border: 2px solid var(--color-border);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px var(--color-shadow);
         transform-style: preserve-3d;
         user-select: none;
 
@@ -53,15 +132,14 @@
       /* flip‑out animation */
       .card.swipe-out {
         transition: transform 0.4s ease, opacity 0.4s ease;
-        /* page flips away around Y axis */
         transform: rotateY(90deg);
         opacity: 0;
       }
 
-      /* header gradient */
+      /* card header gradient */
       .card-header {
         padding: 1rem;
-        background: linear-gradient(90deg, #ffd772 0%, #ff5f7e 100%);
+        background: var(--accent-gradient);
         position: relative;
       }
       .card-header::after {
@@ -71,7 +149,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(#000 1px, transparent 1px) 0 0/8px 8px;
+        background: radial-gradient(var(--color-border) 1px, transparent 1px) 0
+          0/8px 8px;
         opacity: 0.2;
         pointer-events: none;
       }
@@ -80,37 +159,14 @@
         font-size: 1.25rem;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #000;
+        color: var(--text-primary);
         z-index: 1;
       }
 
-      /* help button */
-      .help-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: rgba(255, 255, 255, 0.8);
-        border: 2px solid #000;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        font-size: 1rem;
-        font-weight: bold;
-        color: #000;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-      }
-      .help-button:hover {
-        background: rgba(255, 255, 255, 1);
-      }
-
-      /* body prompts */
+      /* card body prompts */
       .card-body {
         padding: 1rem;
-        background: #fff;
+        background: var(--color-white);
       }
       .card-body ul {
         list-style: none;
@@ -118,19 +174,19 @@
       .card-body li {
         font-size: 1rem;
         margin-bottom: 0.75rem;
-        color: #333;
+        color: var(--text-secondary);
         line-height: 1.4;
       }
 
-      /* footer text */
+      /* card footer */
       .card-footer {
         padding: 0.75rem;
         text-align: center;
-        background: #fafafa;
+        background: var(--color-background);
       }
       .card-footer small {
         font-size: 0.875rem;
-        color: #666;
+        color: var(--text-secondary);
       }
 
       /* modal overlay */
@@ -147,7 +203,7 @@
         z-index: 10;
       }
       .modal-content {
-        background: #fff;
+        background: var(--color-white);
         padding: 2rem;
         border-radius: 8px;
         max-width: 400px;
@@ -165,7 +221,7 @@
       }
       .modal-content p {
         margin-bottom: 1rem;
-        color: #333;
+        color: var(--text-secondary);
       }
       .modal-close {
         position: absolute;
@@ -173,7 +229,7 @@
         right: 0.75rem;
         font-size: 1.25rem;
         font-weight: bold;
-        color: #333;
+        color: var(--text-secondary);
         background: none;
         border: none;
         padding: 0.25rem;
@@ -181,27 +237,37 @@
         line-height: 1;
       }
       .modal-close:hover {
-        color: #000;
+        color: var(--text-primary);
       }
     </style>
   </head>
   <body>
-    <div class="card" id="card">
-      <div class="card-header">
-        <h1 id="category">Category</h1>
-        <button id="help-btn" class="help-button" aria-label="How to play">
-          ?
-        </button>
+    <header class="app-header">
+      <a href="https://kwasnick.github.io/games" id="home-btn" class="icon-btn">
+        <span class="icon">🏠</span>
+        <span class="label">More Games</span>
+      </a>
+      <div class="header-title">Think In Sync</div>
+      <button id="header-help-btn" class="icon-btn" aria-label="Help">
+        <span class="icon">❓</span>
+        <span class="label">Help</span>
+      </button>
+    </header>
+    <main class="app-main">
+      <div class="card" id="card">
+        <div class="card-header">
+          <h1 id="category">Category</h1>
+        </div>
+        <div class="card-body">
+          <ul id="prompts">
+            <!-- prompts go here -->
+          </ul>
+        </div>
+        <div class="card-footer">
+          <small>Refresh or swipe for new card</small>
+        </div>
       </div>
-      <div class="card-body">
-        <ul id="prompts">
-          <!-- prompts go here -->
-        </ul>
-      </div>
-      <div class="card-footer">
-        <small>Refresh or swipe for new card</small>
-      </div>
-    </div>
+    </main>
 
     <!-- How to Play Modal -->
     <div id="help-modal" class="modal" aria-hidden="true">
@@ -247,13 +313,11 @@
       const threshold = 100,
         card = document.getElementById("card");
 
-      // Load cards.json once
       async function initCards() {
         try {
           const res = await fetch("./cards.json");
           if (!res.ok) throw new Error("Network response was not ok");
           cards = await res.json();
-          // show first card
           showRandomCard();
         } catch (err) {
           console.error("Failed to load cards.json:", err);
@@ -263,12 +327,8 @@
       function showRandomCard() {
         const { category, prompts } =
           cards[Math.floor(Math.random() * cards.length)];
-
-        // reset to flipped-away state
         card.classList.remove("reveal", "swipe-out");
-        card.style.transform = ""; // fallback to CSS rotateY(-90deg)
-
-        // populate content
+        card.style.transform = "";
         document.getElementById("category").textContent = category;
         const ul = document.getElementById("prompts");
         ul.innerHTML = "";
@@ -277,11 +337,7 @@
           li.textContent = p;
           ul.appendChild(li);
         });
-
-        // trigger the flip-in
-        requestAnimationFrame(() => {
-          card.classList.add("reveal");
-        });
+        requestAnimationFrame(() => card.classList.add("reveal"));
       }
 
       function handleGestureStart(e) {
@@ -294,7 +350,6 @@
         if (!isDragging) return;
         currentX = e.touches ? e.touches[0].clientX : e.clientX;
         const dx = currentX - startX;
-        // show slight drag but keep Y rotation disabled while dragging
         card.style.transform = `translateX(${dx}px) rotateY(0deg)`;
       }
       function handleGestureEnd() {
@@ -302,20 +357,15 @@
         isDragging = false;
         card.classList.remove("swiping");
         const dx = currentX - startX;
-
         if (Math.abs(dx) > threshold) {
-          // flip-out instead of slide-off
           card.classList.add("swipe-out");
           card.style.transform = `rotateY(90deg)`;
-          // after flip animation, show next card
           setTimeout(showRandomCard, 400);
         } else {
-          // revert if not past threshold
           card.style.transform = "";
         }
       }
 
-      // attach gestures
       ["touchstart", "mousedown"].forEach((evt) =>
         card.addEventListener(evt, handleGestureStart)
       );
@@ -326,8 +376,7 @@
         document.addEventListener(evt, handleGestureEnd)
       );
 
-      // modal
-      const helpBtn = document.getElementById("help-btn");
+      const helpBtn = document.getElementById("header-help-btn");
       const modal = document.getElementById("help-modal");
       const closeBtn = document.getElementById("close-modal");
       helpBtn.addEventListener("click", () => {
@@ -345,7 +394,6 @@
         }
       });
 
-      // initialize
       initCards();
     </script>
   </body>
