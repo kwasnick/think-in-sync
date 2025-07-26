@@ -1798,5 +1798,230 @@
       "A popular color theme for festive decorations",
       "A beverage commonly associated with holiday celebrations"
     ]
+  },
+  {
+    "category": "Robot Innovations",
+    "prompts": [
+      "A famous robot from a movie or show",
+      "A household task a robot could perform",
+      "A type of robot that might be used in space exploration",
+      "A field where robots might replace human workers"
+    ]
+  },
+  {
+    "category": "Urban Monsters",
+    "prompts": [
+      "A classic monster from urban legend",
+      "A famous setting for urban ghost stories",
+      "A movie featuring an urban monster as a key character",
+      "A famous sighting of an unconfirmed creature in a city"
+    ]
+  },
+  {
+    "category": "Delicious Cheeses",
+    "prompts": [
+      "A type of cheese that's known for its strong odor",
+      "A cheese that's often used in Italian cooking",
+      "A cheese that is spreadable",
+      "A cheese popular in French cuisine"
+    ]
+  },
+  {
+    "category": "Fairy Light Displays",
+    "prompts": [
+      "A holiday when fairy lights are often used",
+      "An outdoor place you might find fairy lights",
+      "An occasion for draping fairy lights indoors",
+      "A color commonly used in fairy lights"
+    ]
+  },
+  {
+    "category": "Unusual Phobias",
+    "prompts": [
+      "A fear involving the environment",
+      "A fear connected to social situations",
+      "An uncommon fear relating to everyday objects",
+      "A fear related to animals or insects"
+    ]
+  },
+  {
+    "category": "Costume Parties",
+    "prompts": [
+      "A costume theme related to a specific decade",
+      "A costume you can make out of household items",
+      "An animal that people frequently dress up as",
+      "A superhero character that is easy to recognize"
+    ]
+  },
+  {
+    "category": "Science Discoveries",
+    "prompts": [
+      "A branch of science that involves studying living organisms",
+      "A scientific tool used to measure weather",
+      "A discovery that changed human understanding of the universe",
+      "A physical state of matter"
+    ]
+  },
+  {
+    "category": "Historical Conflicts",
+    "prompts": [
+      "A war that involved multiple continents",
+      "A historical conflict remembered for a significant naval battle",
+      "A war known for its famous turning point",
+      "A battle notable for a famous last stand"
+    ]
+  },
+  {
+    "category": "Fairy Tale Creatures",
+    "prompts": [
+      "A fairy tale creature that lives underwater",
+      "A creature from fairy tales known to be mischievous",
+      "A winged creature in fairy tales",
+      "A creature known for guarding treasures in fairy tales"
+    ]
+  },
+  {
+    "category": "Nostalgic Fads",
+    "prompts": [
+      "A popular toy from the 1990s",
+      "A hairstyle trend from the 1980s",
+      "A teen fashion trend from the 2000s",
+      "A popular website from the early 2000s"
+    ]
+  },
+  {
+    "category": "Culinary Ingredients",
+    "prompts": [
+      "A spice commonly used in Indian cuisine",
+      "An ingredient often found in a salad",
+      "A cheese that melts well on a burger",
+      "A fruit often used in breakfast dishes"
+    ]
+  },
+  {
+    "category": "Urban Flora",
+    "prompts": [
+      "A flowering plant frequently seen on city balconies",
+      "A climbing plant that decorates urban buildings",
+      "A city park plant that attracts a lot of birds",
+      "A type of tree commonly found in cities"
+    ]
+  },
+  {
+    "category": "Energy Sources",
+    "prompts": [
+      "Renewable energy source often used in homes",
+      "Type of fossil fuel with a variety of industrial uses",
+      "A clean energy source that relies on a natural geographic feature",
+      "An energy source that requires large amounts of water"
+    ]
+  },
+  {
+    "category": "Construction",
+    "prompts": [
+      "A type of heavy construction vehicle",
+      "A tool commonly used by construction workers",
+      "A safety gear item for a construction worker",
+      "A famous skyscraper"
+    ]
+  },
+  {
+    "category": "Dream Destinations",
+    "prompts": [
+      "A dream destination known for its beaches",
+      "An exotic dream destination loved for its wildlife",
+      "A mountain destination considered a dream escape",
+      "A dream city destination famous for its architecture"
+    ]
+  },
+  {
+    "category": "Pets",
+    "prompts": [
+      "A kind of pet that is known for its vocal mimicry",
+      "A type of reptile often kept as a pet",
+      "A type of rodent commonly kept as a small pet",
+      "A pet known for its ability to solve puzzles"
+    ]
+  },
+  {
+    "category": "Secret Identities",
+    "prompts": [
+      "A superhero or character known for having a secret identity",
+      "A real-life figure associated with using an alias",
+      "A movie character who leads a double life",
+      "A type of mask used to hide identity"
+    ]
+  },
+  {
+    "category": "Renaissance Era",
+    "prompts": [
+      "A famous artist from the Renaissance period",
+      "A famous painting from the Renaissance",
+      "A technological or scientific advancement during the Renaissance. ",
+      "A renowned architecture style from the Renaissance"
+    ]
+  },
+  {
+    "category": "Mediterranean Cuisine",
+    "prompts": [
+      "A classic Mediterranean salad ingredient",
+      "A popular Mediterranean seafood dish",
+      "A common Mediterranean herb used in cooking",
+      "A type of Mediterranean cheese"
+    ]
+  },
+  {
+    "category": "Aquatic Sports",
+    "prompts": [
+      "A sport that involves diving",
+      "A water sport played on a board",
+      "A team sport in water",
+      "An Olympic water sport"
+    ]
+  },
+  {
+    "category": "Legendary Swords",
+    "prompts": [
+      "A sword known for its connection to a King",
+      "A sword famous in Japanese mythology",
+      "A fabled sword associated with Norse mythology",
+      "A sword tied to a legendary hero"
+    ]
+  },
+  {
+    "category": "Unique Festivals",
+    "prompts": [
+      "A festival focused on a specific animal",
+      "A festival that involves throwing something",
+      "A festival famous for its unique costumes",
+      "A festival that celebrates a particular harvest"
+    ]
+  },
+  {
+    "category": "Island Nations",
+    "prompts": [
+      "An island nation in the Mediterranean Sea",
+      "An island nation known for its unique wildlife",
+      "An island nation famous for its beaches",
+      "An island nation whose official language is not English"
+    ]
+  },
+  {
+    "category": "Tropical Adventures",
+    "prompts": [
+      "A tropical location known for its coral reefs",
+      "A tropical fruit often used in cocktails",
+      "An animal commonly seen in rainforests",
+      "A well-known tropical island feature"
+    ]
+  },
+  {
+    "category": "Regional Cuisines",
+    "prompts": [
+      "A traditional German food",
+      "A well-known French dish",
+      "A popular dish from India",
+      "A staple dish in Italian cuisine"
+    ]
   }
 ]
